@@ -1,5 +1,5 @@
 var path,mainCyclist;
-var pathImg,mainRacerImg1,mainRacerImg2,op1,op2,op3
+var pathImg,mainRacerImg1,mainRacerImg2,opp1,opp2,opp3;
 
 var END =0;
 var PLAY =1;
