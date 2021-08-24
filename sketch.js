@@ -19,10 +19,10 @@ function preload(){
 
 function setup(){
   
-createCanvas(600,600);
+createCanvas(600,800);
   
 // Moving background
-path=createSprite(100,150);
+path=createSprite(100,250);
 path.scale=2
 path.addImage(pathImg);
 path.velocityX = -7;
@@ -31,7 +31,7 @@ path.velocityX = -7;
 mainCyclist  = createSprite(70,150,20,20);
 mainCyclist.addAnimation("SahilRunning",mainRacerImg1);
 mainCyclist.addAnimation("stop",mainRacerImg2);
-mainCyclist.debug = true;
+//mainCyclist.debug = true;
 mainCyclist.setCollider("circle",0,0,600)
   
 mainCyclist.scale=0.1;
@@ -84,7 +84,7 @@ function draw() {
 
 function riders(){
   if (frameCount%130===0){
-    var rider=createSprite(600,random(100,500))
+    var rider=createSprite(800,random(100,500))
     rider.velocityX=-6
     var r = Math.round(random(1,2))
     if(r==1){
@@ -93,7 +93,7 @@ function riders(){
     else{
       rider.addAnimation("running",opp2) 
     }
-    rider.debug=true;
+    //rider.debug=true;
     rider.setCollider("circle",0,0,600)
     rider.scale=0.1
     rider.lifetime=300
