@@ -19,10 +19,10 @@ function preload(){
 
 function setup(){
   
-createCanvas(800,500);
+createCanvas(800,600);
   
 // Moving background
-path=createSprite(100,300);
+path=createSprite(100,275);
 path.scale=2
 path.addImage(pathImg);
 path.velocityX = -7;
@@ -39,7 +39,7 @@ mainCyclist.scale=0.1;
 //opponent.addImage(opp2Img)
  ridergroup=new Group()
   
-  gameOver=createSprite(300,300);
+  gameOver=createSprite(400,300);
   gameOver.addImage(gm);
   gameOver.visible =false;
 }
